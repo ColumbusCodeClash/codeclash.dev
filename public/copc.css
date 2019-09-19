@@ -1,0 +1,112 @@
+body {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p.copc-name {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+p.copc-location {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+div.container {
+  width: 100%;
+  border: 1px dotted black;
+}
+
+div.copc-header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+div.copc-header img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+}
+
+div.copc-winners {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.copc-text {
+  font-size: 1.5em;
+  text-align: center;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+}
+
+div.copc-winner-table {
+  display: table;
+  width: 100%;
+}
+
+div.copc-winner-table-cell {
+  font-size: 1.1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+}
+
+p.copc-winner-type {
+  font-size: 0.7em;
+  font-variant: small-caps;
+}
+
+p.copc-winner-name {
+  font-size: 1.2em;
+  font-variant: small-caps;
+  margin: 5px;
+}
+p.copc-winner-people {
+  margin-top: 0;
+  font-size: 0.8em;
+}
+
+
+div.copc-sponsors-table {
+  display: table;
+  width: 100%;
+}
+
+div.copc-sponsors-table-cell {
+  font-size: 1.1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+div.copc-sponsors-table-cell img {
+  max-width: 200px;
+}
+
+div.copc-copyright {
+  font-size: 0.5em;
+  text-align: center;
+  color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  div.copc-winner-table, div.copc-sponsors-table, div.copc-winner-table-cell, div.copc-sponsors-table-cell {
+    display: block;
+    width: 100%;
+  }
+}
