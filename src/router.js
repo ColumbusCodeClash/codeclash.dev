@@ -1,31 +1,41 @@
-import Vue from "vue";
-import Router from "vue-router";
-import AppHeader from "./layout/AppHeader";
-import AppFooter from "./layout/AppFooter";
-import Components from "./views/Components.vue";
-import Home from "./views/Home";
-import Landing from "./views/Landing.vue";
-import Login from "./views/Login.vue";
-import Register from "./views/Register.vue";
-import Profile from "./views/Profile.vue";
+import Vue from 'vue';
+import Router from 'vue-router';
+import AppHeader from './layout/AppHeader';
+import AppFooter from './layout/AppFooter';
+import AboutUs from './views/AboutUs';
+import Components from './views/Components';
+import Landing from './views/Landing';
+import Login from './views/Login';
+import Register from './views/Register';
+import Profile from './views/Profile';
 
 Vue.use(Router);
 
 export default new Router({
-  linkExactActiveClass: "active",
+  mode: 'history',
+  linkExactActiveClass: 'active',
   routes: [
     {
-      path: "/",
-      name: "components",
+      path: '/',
+      name: 'components',
       components: {
         header: AppHeader,
-        default: Home,
+        default: Components,
         footer: AppFooter
       }
     },
     {
-      path: "/landing",
-      name: "landing",
+      path: '/about-us',
+      name: 'about-us',
+      components: {
+        header: AppHeader,
+        default: AboutUs,
+        footer: AppFooter
+      }
+    },
+    {
+      path: '/landing',
+      name: 'landing',
       components: {
         header: AppHeader,
         default: Landing,
@@ -33,8 +43,8 @@ export default new Router({
       }
     },
     {
-      path: "/login",
-      name: "login",
+      path: '/login',
+      name: 'login',
       components: {
         header: AppHeader,
         default: Login,
@@ -42,8 +52,8 @@ export default new Router({
       }
     },
     {
-      path: "/register",
-      name: "register",
+      path: '/register',
+      name: 'register',
       components: {
         header: AppHeader,
         default: Register,
@@ -51,14 +61,14 @@ export default new Router({
       }
     },
     {
-      path: "/profile",
-      name: "profile",
+      path: '/profile',
+      name: 'profile',
       components: {
         header: AppHeader,
         default: Profile,
         footer: AppFooter
       }
-    }
+    },
   ],
   scrollBehavior: to => {
     if (to.hash) {
