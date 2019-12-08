@@ -98,3 +98,9 @@
 @import "custom/vendor/flatpickr.scss";
 @import "custom/vendor/headroom.scss";
 @import "custom/vendor/nouislider.scss";
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}

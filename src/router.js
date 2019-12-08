@@ -1,13 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import AppHeader from './layout/AppHeader';
-import AppFooter from './layout/AppFooter';
 import AboutUs from './views/AboutUs';
-import Components from './views/Components';
 import Landing from './views/Landing';
-import Login from './views/Login';
-import Register from './views/Register';
-import Profile from './views/Profile';
+import Branding from './layout/Branding';
+import PastCompetitions from './views/PastCompetitions';
 
 Vue.use(Router);
 
@@ -17,58 +13,26 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'components',
+      name: 'landing',
       components: {
-        header: AppHeader,
-        default: Components,
-        footer: AppFooter
+        branding: Branding,
+        default: Landing
       }
     },
     {
       path: '/about-us',
       name: 'about-us',
       components: {
-        header: AppHeader,
-        default: AboutUs,
-        footer: AppFooter
+        default: AboutUs
       }
     },
     {
-      path: '/landing',
-      name: 'landing',
+      path: '/past-competitions',
+      name: 'past-competitions',
       components: {
-        header: AppHeader,
-        default: Landing,
-        footer: AppFooter
+        default: PastCompetitions
       }
-    },
-    {
-      path: '/login',
-      name: 'login',
-      components: {
-        header: AppHeader,
-        default: Login,
-        footer: AppFooter
-      }
-    },
-    {
-      path: '/register',
-      name: 'register',
-      components: {
-        header: AppHeader,
-        default: Register,
-        footer: AppFooter
-      }
-    },
-    {
-      path: '/profile',
-      name: 'profile',
-      components: {
-        header: AppHeader,
-        default: Profile,
-        footer: AppFooter
-      }
-    },
+    }
   ],
   scrollBehavior: to => {
     if (to.hash) {

@@ -4,18 +4,21 @@
       <div class="row row-grid align-items-center my-md">
         <div class="col-lg-6" />
       </div>
-      <hr />
+
       <div class="row align-items-center justify-content-md-between">
         <div class="col-md-6">
           <div class="copyright">
             &copy; {{year}}
-            Central Ohio Programming Competition
+            Columbus Code Clash
           </div>
         </div>
         <div class="col-md-6">
           <ul class="nav nav-footer justify-content-end">
             <li class="nav-item">
-              <router-link to="/about-us">
+              <router-link
+                to="/about-us"
+                class="text-primary"
+              >
                 About Us
               </router-link>
             </li>
@@ -25,6 +28,7 @@
     </div>
   </footer>
 </template>
+
 <script>
 export default {
   name: "app-footer",
@@ -35,5 +39,9 @@ export default {
   }
 };
 </script>
+
 <style>
+.footer.has-cards:before {
+  top: initial !important;
+}
 </style>
