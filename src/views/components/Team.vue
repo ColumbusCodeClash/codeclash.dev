@@ -7,12 +7,25 @@
           <template slot="title">Founder, Leadership</template>
         </person>
       </div>
+      
       <div class="col-md-6 col-lg-3 mb-5 mb-lg-3">
-        <person icon-type="primary" usernameGitLab="brendantodahl">
-          <template slot="name">Brendan Todahl</template>
+        <person icon-type="success" usernameGitLab="rwpcpe">
+          <template slot="name">Russell Patterson</template>
+          <template slot="title">Developer, Leadership</template>
+        </person>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-5 mb-lg-3">
+        <person
+          icon-type="danger"
+          usernameGitLab="gstannard"
+          :profileImage="images.grantStannard"
+        >
+          <template slot="name">Grant Stannard</template>
           <template slot="title">Developer</template>
         </person>
       </div>
+
       <div class="col-md-6 col-lg-3 mb-5 mb-lg-3">
         <person
           icon-type="info"
@@ -25,22 +38,12 @@
           <template slot="title">Developer</template>
         </person>
       </div>
-      <div class="col-md-6 col-lg-3 mb-5 mb-lg-3">
-        <person icon-type="success" usernameGitLab="rwpcpe">
-          <template slot="name">Russell Patterson</template>
-          <template slot="title">Developer, Leadership</template>
-        </person>
-      </div>
     </div>
     
-    <div class="row">
+    <div class="row">      
       <div class="col-md-6 col-lg-3 mb-5 mb-lg-3">
-        <person
-          icon-type="danger"
-          usernameGitLab="gstannard"
-          :profileImage="images.grantStannard"
-        >
-          <template slot="name">Grant Stannard</template>
+        <person icon-type="primary" usernameGitLab="brendantodahl">
+          <template slot="name">Brendan Todahl</template>
           <template slot="title">Developer</template>
         </person>
       </div>

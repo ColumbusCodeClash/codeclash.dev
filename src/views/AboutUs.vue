@@ -5,7 +5,7 @@
         <div class="col-lg-8">
           <h2 class="display-3">The Amazing Team</h2>
           <p class="lead text-muted">
-            Meet the people who make the <strong>Central Ohio Programming Competition</strong> possible!
+            Meet the people who make <strong>Columbus Code Clash</strong> possible!
           </p>
         </div>
       </div>
