@@ -4,7 +4,7 @@
     <main>
       <router-view name="branding"></router-view>
       <news-alerts
-        v-if="shouldShowNewsAlert"
+        :class="{ hidden: shouldHideNewsAlert }"
         type="info"
       >
         <template slot="news">
@@ -15,6 +15,7 @@
     </main>
   </div>
 </template>
+
 <script>
 import { FadeTransition } from "vue2-transitions";
 import NewsAlerts from './components/NewsAlerts';
@@ -27,9 +28,15 @@ export default {
     NewsAlerts
   },
   computed: {
-    shouldShowNewsAlert: function() {
-      return this.$router.currentRoute.name !== undefined;
+    shouldHideNewsAlert: function() {
+      return this.$route.name === undefined;
     }
   }
 };
 </script>
+
+<style>
+.hidden {
+  display: none;
+}
+</style>
