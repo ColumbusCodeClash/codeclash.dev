@@ -14,7 +14,7 @@
               class="px-2"
               :href="onPageLink(year)"
             >
-              <badge pill type="secondary">{{ year }}</badge>
+              <badge pill type="primary">{{ year }}</badge>
               <template v-if="index !== (years.length - 1)">
                 •
               </template>
