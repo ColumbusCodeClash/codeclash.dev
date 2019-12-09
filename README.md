@@ -1,5 +1,9 @@
 # vue
 
+##
+install yarn
+install nodejs
+
 ## Project setup
 ```
 yarn install
