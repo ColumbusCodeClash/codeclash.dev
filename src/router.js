@@ -4,6 +4,8 @@ import AboutUs from './views/AboutUs';
 import Landing from './views/Landing';
 import Branding from './layout/Branding';
 import PastCompetitions from './views/PastCompetitions';
+import Sponsors from './views/Sponsors';
+import NotFound from './views/NotFound.vue';
 
 Vue.use(Router);
 
@@ -32,6 +34,17 @@ export default new Router({
       components: {
         default: PastCompetitions
       }
+    },
+    {
+      path: '/sponsors',
+      name: 'sponsors',
+      components: {
+        default: Sponsors
+      }
+    },
+    {
+      path: '*',
+      component: NotFound
     }
   ],
   scrollBehavior: to => {

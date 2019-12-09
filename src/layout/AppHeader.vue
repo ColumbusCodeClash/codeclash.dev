@@ -30,6 +30,15 @@
 
         <li class="nav-item">
           <router-link
+            to="/sponsors"
+            class="text-white nav-link nav-link-inner--text"
+          >
+          Sponsors
+          </router-link>
+        </li>
+
+        <li class="nav-item">
+          <router-link
             to="/about-us"
             class="text-white nav-link nav-link-inner--text"
           >
