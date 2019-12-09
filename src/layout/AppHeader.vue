@@ -9,7 +9,9 @@
 
       <div class="row" slot="content-header" slot-scope="{closeMenu}">
         <div class="col-6 collapse-brand">
-          <img src="logo" />
+          <div class="logo">
+            CCC
+          </div>
         </div>
         <div class="col-6 collapse-close">
           <close-button @click="closeMenu"></close-button>
