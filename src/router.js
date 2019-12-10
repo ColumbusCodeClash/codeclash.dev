@@ -5,6 +5,7 @@ import Landing from './views/Landing';
 import Branding from './layout/Branding';
 import PastCompetitions from './views/PastCompetitions';
 import Sponsors from './views/Sponsors';
+import LeaderBoard from './views/LeaderBoard';
 import NotFound from './views/NotFound.vue';
 
 Vue.use(Router);
@@ -19,6 +20,9 @@ export default new Router({
       components: {
         branding: Branding,
         default: Landing
+      },
+      meta: {
+        title: 'Columbus Code Clash',
       }
     },
     {
@@ -26,6 +30,9 @@ export default new Router({
       name: 'about-us',
       components: {
         default: AboutUs
+      },
+      meta: {
+        title: 'Columbus Code Clash - About Us',
       }
     },
     {
@@ -33,6 +40,9 @@ export default new Router({
       name: 'past-competitions',
       components: {
         default: PastCompetitions
+      },
+      meta: {
+        title: 'Columbus Code Clash - Past Competitions',
       }
     },
     {
@@ -40,11 +50,27 @@ export default new Router({
       name: 'sponsors',
       components: {
         default: Sponsors
+      },
+      meta: {
+        title: 'Columbus Code Clash - Our Sponsor',
+      }
+    },
+    {
+      path: '/leader-board',
+      name: 'leader-board',
+      components: {
+        default: LeaderBoard
+      },
+      meta: {
+        title: 'Columbus Code Clash - Leader Board',
       }
     },
     {
       path: '*',
-      component: NotFound
+      component: NotFound,
+      meta: {
+        title: '404',
+      }
     }
   ],
   scrollBehavior: to => {
