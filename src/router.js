@@ -5,6 +5,7 @@ import Landing from './views/Landing';
 import Branding from './layout/Branding';
 import PastCompetitions from './views/PastCompetitions';
 import Sponsors from './views/Sponsors';
+import LeaderBoard from './views/LeaderBoard';
 import NotFound from './views/NotFound.vue';
 
 Vue.use(Router);
@@ -52,6 +53,16 @@ export default new Router({
       },
       meta: {
         title: 'Columbus Code Clash - Our Sponsor',
+      }
+    },
+    {
+      path: '/leader-board',
+      name: 'leader-board',
+      components: {
+        default: LeaderBoard
+      },
+      meta: {
+        title: 'Columbus Code Clash - Leader Board',
       }
     },
     {
