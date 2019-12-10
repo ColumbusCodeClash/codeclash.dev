@@ -19,6 +19,9 @@ export default new Router({
       components: {
         branding: Branding,
         default: Landing
+      },
+      meta: {
+        title: 'Columbus Code Clash',
       }
     },
     {
@@ -26,6 +29,9 @@ export default new Router({
       name: 'about-us',
       components: {
         default: AboutUs
+      },
+      meta: {
+        title: 'Columbus Code Clash - About Us',
       }
     },
     {
@@ -33,6 +39,9 @@ export default new Router({
       name: 'past-competitions',
       components: {
         default: PastCompetitions
+      },
+      meta: {
+        title: 'Columbus Code Clash - Past Competitions',
       }
     },
     {
@@ -40,11 +49,17 @@ export default new Router({
       name: 'sponsors',
       components: {
         default: Sponsors
+      },
+      meta: {
+        title: 'Columbus Code Clash - Our Sponsor',
       }
     },
     {
       path: '*',
-      component: NotFound
+      component: NotFound,
+      meta: {
+        title: '404',
+      }
     }
   ],
   scrollBehavior: to => {
