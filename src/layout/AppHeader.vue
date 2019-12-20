@@ -2,15 +2,21 @@
   <header class="header-global">
     <base-nav class="navbar-main" transparent type="primary" effect="light" expand>
       <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
-        <div class="logo">
-          <img :src="images.logo" />
+        <div>
+          <img
+            :src="images.logoWhiteTransparent"
+            class="logo"
+          />
         </div>
       </router-link>
 
       <div class="row" slot="content-header" slot-scope="{closeMenu}">
         <div class="col-6 collapse-brand">
-          <div class="logo">
-            Columbus Code Clash
+          <div>
+            <img
+              :src="images.logoPurpleTransparent"
+              class="logo"
+            />
           </div>
         </div>
         <div class="col-6 collapse-close">
@@ -92,7 +98,8 @@ export default {
   data() {
     return {
       images: {
-        logo: require('./../assets/white_logo_transparent_background.png')
+        logoWhiteTransparent: require('./../assets/white_logo_transparent_background.png'),
+        logoPurpleTransparent: require('./../assets/logo_transparent_background.png')
       }
     }
   }
@@ -108,6 +115,6 @@ nav.navbar-transparent {
 
 .logo {
   width: 100px;
-  height: 100%;
+  height: 100% !important;
 }
 </style>
