@@ -3,14 +3,14 @@
     <base-nav class="navbar-main" transparent type="primary" effect="light" expand>
       <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
         <div class="logo">
-          CCC
+          <img :src="images.logo" />
         </div>
       </router-link>
 
       <div class="row" slot="content-header" slot-scope="{closeMenu}">
         <div class="col-6 collapse-brand">
           <div class="logo">
-            CCC
+            Columbus Code Clash
           </div>
         </div>
         <div class="col-6 collapse-close">
@@ -88,6 +88,13 @@ export default {
     BaseNav,
     CloseButton,
     BaseDropdown
+  },
+  data() {
+    return {
+      images: {
+        logo: require('./../assets/white_logo_transparent_background.png')
+      }
+    }
   }
 };
 </script>
@@ -100,13 +107,7 @@ nav.navbar-transparent {
 }
 
 .logo {
-  border: 3px solid white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
-  letter-spacing: 3px;
-  font-weight: 400;
-  font-size: 1.25rem;
+  width: 100px;
+  height: 100%;
 }
 </style>

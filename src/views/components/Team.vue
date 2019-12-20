@@ -2,7 +2,11 @@
   <div>
     <div class="row">
       <div class="col-md-6 col-lg-3 mb-5 mb-lg-3">
-        <person icon-type="warning" usernameGitLab="mdhand">
+        <person
+          icon-type="warning"
+          usernameGitLab="mdhand"
+          :profileImage="images.mikeHand"
+        >
           <template slot="name">Mike Hand</template>
           <template slot="title">Founder, Leadership</template>
         </person>
@@ -42,7 +46,11 @@
     
     <div class="row">      
       <div class="col-md-6 col-lg-3 mb-5 mb-lg-3">
-        <person icon-type="primary" usernameGitLab="brendantodahl">
+        <person
+          icon-type="primary"
+          usernameGitLab="brendantodahl"
+          :profileImage="images.brendanTodahl"
+        >
           <template slot="name">Brendan Todahl</template>
           <template slot="title">Developer</template>
         </person>
@@ -64,6 +72,8 @@ export default {
       images: {
         grantStannard: require('./../../assets/profile-grant-stannard.jpg'),
         hannahStannard: require('./../../assets/profile-hannah-stannard.jpg'),
+        mikeHand: require('./../../assets/profile-mike-hand.jpg'),
+        brendanTodahl: require('./../../assets/profile-brendan-todahl.jpg'),
       }
     }
   }
