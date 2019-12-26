@@ -3,7 +3,6 @@ image: node:lts-alpine
 pages:
   stage: deploy
   script:
-   - npm install -g yarn
    - yarn install
    - yarn run build
   artifacts:
