@@ -12,7 +12,7 @@
       style="font-size: 200px; width: 200px; text-align: center;"
     >
     </i>
-    <div class="pt-4 text-center">
+    <div class="pt-2 text-center">
       <h5 class="title">
         <span class="d-block mb-1">
           <slot name="name" />
@@ -23,7 +23,15 @@
         </small>
       </h5>
 
-      <div class="mt-3">
+      <div class="mt-1">
+        <base-button
+          v-if="emailAddress !== ''"
+          :href=emailUrl
+          :type=iconType
+          tag="a"
+          icon="fa fa-envelope"
+          rounded icon-only
+        />
         <base-button
           v-if="usernameTwitter !== ''"
           :href=twitterUrl
@@ -77,6 +85,9 @@ export default {
     },
     websiteUrl: {
       default: ''
+    },
+    emailAddress: {
+      default: ''
     }
   },
   computed: {
@@ -85,6 +96,9 @@ export default {
     },
     gitLabUrl: function() {
       return `https://gitlab.com/${this.usernameGitLab}`;
+    },
+    emailUrl: function() {
+      return `mailto:${this.emailAddress}`;
     }
   }
 };
