@@ -1,5 +1,13 @@
 image: node:lts-alpine
 
+lint on commit:
+  stage: build
+  script:
+   - yarn install
+   - yarn run lint
+  only:
+   - merge_requests
+
 pages:
   stage: deploy
   script:
