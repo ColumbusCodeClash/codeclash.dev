@@ -5,6 +5,8 @@ pages:
   script:
    - yarn install
    - yarn run build
+   - rm -rf public
+   - cp -r dist/* public
   artifacts:
     paths:
     - public
