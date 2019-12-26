@@ -1,21 +1,22 @@
 <template>
     <component :is="tag"
                :type="tag === 'button' ? nativeType: ''"
+               :target="tag === 'a' && newWindow ? '_blank': ''"
                @click="handleClick"
                class="btn"
                :class="classes">
-    <span class="btn-inner--icon" v-if="$slots.icon || icon && $slots.default">
-      <slot name="icon">
-        <i :class="icon"></i>
-      </slot>
-    </span>
-        <i v-if="!$slots.default" :class="icon"></i>
-        <span class="btn-inner--text" v-if="$slots.icon || icon && $slots.default">
-          <slot>
-            {{text}}
-          </slot>
-    </span>
-        <slot v-if="!$slots.icon && !icon"></slot>
+      <span class="btn-inner--icon" v-if="$slots.icon || icon && $slots.default">
+        <slot name="icon">
+          <i :class="icon"></i>
+        </slot>
+      </span>
+      <i v-if="!$slots.default" :class="icon"></i>
+      <span class="btn-inner--text" v-if="$slots.icon || icon && $slots.default">
+        <slot>
+          {{text}}
+        </slot>
+      </span>
+      <slot v-if="!$slots.icon && !icon"></slot>
     </component>
 </template>
 <script>
@@ -76,6 +77,11 @@ export default {
       type: Boolean,
       default: false,
       description: "Whether button is of block type"
+    },
+    newWindow: {
+      type: Boolean,
+      default: false,
+      description: "Anchor tags only - open in new tab/window."
     }
   },
   computed: {

@@ -13,7 +13,12 @@
       </div>
       
       <div class="col-md-6 col-lg-3 mb-5 mb-lg-3">
-        <person icon-type="success" usernameGitLab="rwpcpe">
+        <person 
+          icon-type="success" 
+          usernameGitLab="rwpcpe"
+          usernameTwitter="rwpcpe"
+          websiteUrl="http://russellwritescode.com"
+          :profileImage="images.russellPatterson">
           <template slot="name">Russell Patterson</template>
           <template slot="title">Developer, Leadership</template>
         </person>
@@ -73,6 +78,7 @@ export default {
         grantStannard: require('./../../assets/profile-grant-stannard.jpg'),
         hannahStannard: require('./../../assets/profile-hannah-stannard.jpg'),
         mikeHand: require('./../../assets/profile-mike-hand.jpg'),
+        russellPatterson: require('./../../assets/profile-russell-patterson.jpg'),
         brendanTodahl: require('./../../assets/profile-brendan-todahl.jpg'),
       }
     }

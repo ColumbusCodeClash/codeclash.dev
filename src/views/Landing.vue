@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <current-challenge />
+      <!-- <current-challenge /> -->
     </section>
     
     <section class="section"> 
@@ -18,15 +18,15 @@
 
 <script>
 import Champions from './../components/Challenges/Champions/Champions';
-import CurrentChallenge from './../components/Challenges/CurrentChallenge';
+//import CurrentChallenge from './../components/Challenges/CurrentChallenge';
 
 import data from './../data/challenges';
 
 export default {
   name: 'home',
   components: {
-    Champions,
-    CurrentChallenge
+    Champions//,
+    //CurrentChallenge
   },
   computed: {    
     mostRecentCompetition: function() {

@@ -1,5 +1,5 @@
 <template>
-  
+  <span>WIP</span>
 </template>
 
 <script>

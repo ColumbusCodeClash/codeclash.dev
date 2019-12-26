@@ -30,7 +30,7 @@
           :type=iconType
           tag="a"
           icon="fa fa-twitter"
-          rounded icon-only
+          rounded icon-only newWindow
         />
         <base-button
           v-if="usernameGitLab !== ''"
@@ -38,7 +38,7 @@
           :type=iconType
           tag="a"
           icon="fa fa-gitlab"
-          rounded icon-only
+          rounded icon-only newWindow
         />
         <base-button
           v-if="websiteUrl !== ''"
@@ -46,7 +46,7 @@
           :type=iconType
           tag="a"
           icon="fa fa-code"
-          rounded icon-only
+          rounded icon-only newWindow
         />
       </div>
     </div>
