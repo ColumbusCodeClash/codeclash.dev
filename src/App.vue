@@ -8,7 +8,7 @@
         type="info"
       >
         <template slot="news">
-          <strong>Check back</strong> for more information about our upcoming programming competition for <strong>2020</strong>!
+          <strong><a href="https://forms.gle/WvT2C9mrBFf3gcvP9">Join our email list</a></strong> to be notified when registration opens!
         </template>
       </news-alerts>
       <router-view/>
