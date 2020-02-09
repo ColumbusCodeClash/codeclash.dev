@@ -1,0 +1,16 @@
+{
+  "beginnerTeams": [
+    {"name": "Team 1", "win": 5, "lose": 2},
+    {"name": "Team 2", "win": 5, "lose": 3},
+    {"name": "Team 3", "win": 5, "lose": 2},
+    {"name": "Team 4", "win": 3, "lose": 2},
+    {"name": "Team 5", "win": 2, "lose": 11}
+  ],
+  "experiencedTeams": [
+    {"name": "Team 1", "win": 1, "lose": 4},
+    {"name": "Team 2", "win": 4, "lose": 1},
+    {"name": "Team 3", "win": 3, "lose": 2},
+    {"name": "Team 4", "win": 2, "lose": 3},
+    {"name": "Team 5", "win": 5, "lose": 0}
+  ]
+}
