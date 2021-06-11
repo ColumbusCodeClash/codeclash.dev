@@ -49,14 +49,6 @@
           rounded icon-only newWindow
         />
         <base-button
-          v-if="usernameGitLab !== ''"
-          :href=gitLabUrl
-          :type=iconType
-          tag="a"
-          icon="fa fa-gitlab"
-          rounded icon-only newWindow
-        />
-        <base-button
           v-if="websiteUrl !== ''"
           :href=websiteUrl
           :type=iconType
@@ -82,9 +74,6 @@ export default {
     usernameGitHub: {
       default: ''
     },
-    usernameGitLab: {
-      default: ''
-    },
     usernameLinkedIn: {
       default: ''
     },
@@ -104,9 +93,6 @@ export default {
     },
     gitHubUrl: function() {
       return `https://github.com/${this.usernameGitHub}`;
-    },
-    gitLabUrl: function() {
-      return `https://gitlab.com/${this.usernameGitLab}`;
     },
     emailUrl: function() {
       return `mailto:${this.emailAddress}`;
