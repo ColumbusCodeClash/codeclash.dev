@@ -5,7 +5,7 @@
         <person
           icon-type="warning"
           emailAddress="mike@codeclash.dev"
-          usernameGitLab="mdhand"
+          usernameGitHub="mdhanddev"
           :profileImage="images.mikeHand"
         >
           <template slot="name">Mike Hand</template>
@@ -21,7 +21,7 @@
           websiteUrl="http://russellwritescode.com"
           :profileImage="images.russellPatterson">
           <template slot="name">Russell Patterson</template>
-          <template slot="title">Technical Leadership</template>
+          <template slot="title">Tech Lead</template>
         </person>
       </div>
 
@@ -29,7 +29,7 @@
         <person
           icon-type="info"
           emailAddress="hannah@codeclash.dev"
-          usernameGitLab="hstannard"
+          usernameGitHub="hannahrstannard"
           usernameTwitter="hannahrstannard"
           websiteUrl="http://hannahstannard.com"
           :profileImage="images.hannahStannard"
@@ -43,7 +43,7 @@
         <person
           icon-type="primary"
           emailAddress="brendan@codeclash.dev"
-          usernameGitLab="brendantodahl"
+          usernameGitHub="BrendanTodahl"
           :profileImage="images.brendanTodahl"
         >
           <template slot="name">Brendan Todahl</template>
@@ -55,7 +55,7 @@
         <person
           icon-type="danger"
           emailAddress="grant@codeclash.dev"
-          usernameGitLab="gstannard"
+          usernameGitHub="grantstannard"
           :profileImage="images.grantStannard"
         >
           <template slot="name">Grant Stannard</template>
