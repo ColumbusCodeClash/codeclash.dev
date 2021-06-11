@@ -90,16 +90,16 @@ self.__precacheManifest = [
     "url": "/codeclash.dev/c909b1344903ceae252d34eecc8559a7.pdf"
   },
   {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/codeclash.dev/fonts/fontawesome-webfont.674f50d2.eot"
+  },
+  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "/codeclash.dev/fonts/fontawesome-webfont.af7ae505.woff2"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/codeclash.dev/fonts/fontawesome-webfont.fee66e71.woff"
-  },
-  {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/codeclash.dev/fonts/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "b06871f281fee6b241d60582ae9369b9",
