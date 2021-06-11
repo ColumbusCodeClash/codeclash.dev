@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
-  publicPath: '/codeclash.dev/',
+  publicPath: '/',
   configureWebpack: {
     // Set up all the aliases we use in our app.
     plugins: [
