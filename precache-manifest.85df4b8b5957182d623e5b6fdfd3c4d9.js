@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1f4205fe11eceb19d505",
+    "revision": "4e2a2a9469e8a2f5f648",
     "url": "/codeclash.dev/css/app.864615ea.css"
   },
   {
-    "revision": "1f4205fe11eceb19d505",
-    "url": "/codeclash.dev/js/app.19382c3b.js"
+    "revision": "4e2a2a9469e8a2f5f648",
+    "url": "/codeclash.dev/js/app.383f7215.js"
   },
   {
     "revision": "a7740961c9e61e9a3337",
@@ -90,16 +90,16 @@ self.__precacheManifest = [
     "url": "/codeclash.dev/c909b1344903ceae252d34eecc8559a7.pdf"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/codeclash.dev/fonts/fontawesome-webfont.674f50d2.eot"
-  },
-  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "/codeclash.dev/fonts/fontawesome-webfont.af7ae505.woff2"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/codeclash.dev/fonts/fontawesome-webfont.fee66e71.woff"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/codeclash.dev/fonts/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "b06871f281fee6b241d60582ae9369b9",
@@ -126,7 +126,7 @@ self.__precacheManifest = [
     "url": "/codeclash.dev/img/profile-brendan-todahl.0151c896.jpg"
   },
   {
-    "revision": "8b4990dd0b0e032174741922611ec588",
+    "revision": "3f7ec9676bd8967ace19d005f990c6e9",
     "url": "/codeclash.dev/index.html"
   }
 ];
