@@ -41,6 +41,14 @@
           rounded icon-only newWindow
         />
         <base-button
+          v-if="usernameGitHub !== ''"
+          :href=gitHubUrl
+          :type=iconType
+          tag="a"
+          icon="fa fa-github"
+          rounded icon-only newWindow
+        />
+        <base-button
           v-if="usernameGitLab !== ''"
           :href=gitLabUrl
           :type=iconType
@@ -71,7 +79,7 @@ export default {
     iconType: {
       default: 'info'
     },
-    usernameGithub: {
+    usernameGitHub: {
       default: ''
     },
     usernameGitLab: {
@@ -93,6 +101,9 @@ export default {
   computed: {
     twitterUrl: function() {
       return `https://twitter.com/${this.usernameTwitter}`;
+    },
+    gitHubUrl: function() {
+      return `https://github.com/${this.usernameGitHub}`;
     },
     gitLabUrl: function() {
       return `https://gitlab.com/${this.usernameGitLab}`;

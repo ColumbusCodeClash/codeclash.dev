@@ -17,8 +17,7 @@
         <person 
           icon-type="success" 
           emailAddress="russell@codeclash.dev"
-          usernameGitLab="rwpcpe"
-          usernameTwitter="rwpcpe"
+          usernameGitHub="russellwpatterson"
           websiteUrl="http://russellwritescode.com"
           :profileImage="images.russellPatterson">
           <template slot="name">Russell Patterson</template>
