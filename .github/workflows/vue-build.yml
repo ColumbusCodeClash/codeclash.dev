@@ -1,18 +1,40 @@
-name: Build Vue Site
+  name: GH Pages deploy
 
-on:
-  push:
-    branches: [ main ]
+  on:
+    push:
+      branches: main
+      paths-ignore:
+        - "**.md"
 
-jobs:
-  build_vue:
-    runs-on: ubuntu-latest
-    name: Build Vue
-    steps:
-    - uses: actions/checkout@v2
-    - id: Build-Vue
-      uses: xRealNeon/VuePagesAction@1.0.0
-      with:
-        username: 'columbuscodeclash'
-        reponame: 'codeclash.dev'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+    pull_request:
+      branches: main
+      paths-ignore:
+        - "**.md"
+
+  jobs:
+    build-deploy:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout 🛎️
+          uses: actions/checkout@master
+          with:
+            persist-credentials: false
+
+        - name: Install 🔧
+          run: yarn install
+
+        - name: Lint 🧐
+          run: yarn lint:check
+
+        - name: Build 🏗️
+          run: yarn build
+          env:
+            NODE_ENV: production
+
+        - name: Deploy to GH Pages 🚀
+          if: ${{ github.event_name != 'pull_request' }}
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: dist
